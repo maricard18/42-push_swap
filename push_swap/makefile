@@ -6,7 +6,7 @@
 #    By: maricard <maricard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/07 10:28:04 by maricard          #+#    #+#              #
-#    Updated: 2023/04/07 14:54:09 by maricard         ###   ########.fr        #
+#    Updated: 2023/04/08 10:42:42 by maricard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,9 +18,15 @@ LIBFT = ./libft/libft.a
 NAME = push_swap
 INCLUDES = includes
 
-SRC =	./src/stack/check_arguments.c \
+SRC =	./src/operations/push.c \
+		./src/operations/reverse.c \
+		./src/operations/rotate.c \
+		./src/operations/swap.c \
+		./src/algorithm/file1.c \
+		./src/stack/check_arguments.c \
 		./src/utils/ft_error.c \
-		./src/utils/init_structs.c
+		./src/utils/init_structs.c \
+		./src/utils/tests.c
 
 SRC-OBJ = $(SRC:.c=.o)
 
@@ -44,6 +50,6 @@ fclean: clean
 	$(RM) $(NAME)
 
 leaks:
-    valgrind --leak-check=full ./$(NAME) $(ARGS)
+#	valgrind --leak-check=full ./$(NAME) $(ARGS)
 
 re: fclean all

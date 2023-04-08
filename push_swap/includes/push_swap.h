@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 10:33:22 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/08 00:46:10 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/08 12:27:13 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 // C libraries
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdbool.h>
 
 // Macros
 # define INT_MAX 2147483647
@@ -29,6 +30,7 @@
 // Structs
 typedef struct s_root
 {
+	int	size;
 	int	a;
 	int	b;
 	int	temp;
@@ -42,17 +44,29 @@ void	check_arguments(char **argv, t_root *root);
 // Utils
 void	ft_error(char *str, t_root *root);
 void	init_structs(t_root *root);
+void	tests(int *stack, char c);
+
+// Algorithm
+void	test1(t_root *root);
 
 // Operations
 // Swap
-void	sa(t_root *root);
-void	sb(t_root *root);
+void	sa(t_root *root, bool flag);
+void	sb(t_root *root, bool flag);
 void	ss(t_root *root);
 
 // Rotate
-void    ra(t_root *root);
-void    rb(t_root *root);
-void    rr(t_root *root);
+void	ra(t_root *root, bool flag);
+void	rb(t_root *root, bool flag);
+void	rr(t_root *root);
 
 // Reverse
+void	rra(t_root *root, bool flag);
+void	rrb(t_root *root, bool flag);
+void	rrr(t_root *root);
+
+// Push
+void	pa(t_root *root);
+void	pb(t_root *root);
+
 #endif

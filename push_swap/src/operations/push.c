@@ -6,16 +6,66 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 15:00:31 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/08 00:15:31 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/08 12:51:04 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void    pa(t_root *root)
+void	pa(t_root *root)
 {
-    if (root->size_b == 0)
-        return ;
-    
+	int	i;
+
+	i = root->a - 1;
+	if (root->b == 0)
+		return ;
+	while (i - 1 >= 0)
+	{
+		root->temp = root->stack_a[i];
+		root->stack_a[i] = root->stack_a[i - 1];
+		root->stack_a[i - 1] = root->temp;
+		i--;
+	}
+	root->temp = root->stack_b[0];
+	root->stack_b[0] = root->stack_a[0];
+	root->stack_a[0] = root->temp;
+	root->a++;
+	root->b--;
+	i = -1;
+	while (i++ <= root->size)
+	{
+		root->temp = root->stack_b[i];
+		root->stack_b[i] = root->stack_b[i + 1];
+		root->stack_b[i + 1] = root->temp;
+	}
+	ft_printf("pa\n");
 }
 
+void	pb(t_root *root)
+{
+	int	i;
+
+	i = root->b - 1;
+	if (root->a == 0)
+		return ;
+	while (i - 1 >= 0)
+	{
+		root->temp = root->stack_b[i];
+		root->stack_b[i] = root->stack_b[i - 1];
+		root->stack_b[i - 1] = root->temp;
+		i--;
+	}
+	root->temp = root->stack_a[0];
+	root->stack_a[0] = root->stack_b[0];
+	root->stack_b[0] = root->temp;
+	root->b++;
+	root->a--;
+	i = -1;
+	while (i++ <= root->size)
+	{
+		root->temp = root->stack_a[i];
+		root->stack_a[i] = root->stack_a[i + 1];
+		root->stack_a[i + 1] = root->temp;
+	}
+	ft_printf("pb\n");
+}

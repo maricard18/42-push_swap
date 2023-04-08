@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   file1.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/07 10:35:52 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/08 10:39:15 by maricard         ###   ########.fr       */
+/*   Created: 2023/04/08 10:37:07 by maricard          #+#    #+#             */
+/*   Updated: 2023/04/08 12:32:22 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	main(int argc, char **argv)
+void	test1(t_root *root)
 {
-	t_root	root;
-	
-	ft_bzero(&root, sizeof(root));
-	init_structs(&root);
-	if (argc == 2)
-		exit(0);
-	check_arguments(argv, &root);
-	test1(&root);
-	return (0);
+	sa(root, 1);
+	tests(root->stack_a, 'a');
+	pb(root);
+	tests(root->stack_b, 'b');
+	tests(root->stack_a, 'a');
 }

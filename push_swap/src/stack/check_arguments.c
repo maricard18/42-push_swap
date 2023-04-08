@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 11:03:17 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/08 00:46:18 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/08 12:16:28 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,10 @@ void	put_to_stack(char **argv, t_root *root)
 
 	i = 1;
 	a = 0;
-	root->stack_a = malloc(sizeof(int) * root->size);
+	root->stack_a = ft_calloc(root->size, sizeof(int));
+	if (!root->stack_a)
+		ft_error("Memory error.", root);
+	root->stack_b = ft_calloc(root->size, sizeof(int));
 	if (!root->stack_a)
 		ft_error("Memory error.", root);
 	while (argv[i])
@@ -41,6 +44,8 @@ void	is_number(char **argv, t_root *root)
 		a = 0;
 		while (argv[i][a])
 		{
+			if (argv[i][0] == '-')
+				a++;
 			if (argv[i][a] >= '0' && argv[i][a] <= '9')
 				a++;
 			else
@@ -48,8 +53,11 @@ void	is_number(char **argv, t_root *root)
 		}
 		i++;
 	}
-	root->a = i;
+	root->size = i - 1;
+	root->a = i - 1;
 }
+
+// do i have to consider duplicates ?
 
 void	check_arguments(char **argv, t_root *root)
 {
