@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 15:01:11 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/08 12:22:39 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/08 17:01:41 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,24 @@
 
 void	sa(t_root *root, bool flag)
 {
-	if (root->size < 2)
+	if (root->a < 2)
 		return ;
 	root->temp = root->stack_a[0];
 	root->stack_a[0] = root->stack_a[1];
 	root->stack_a[1] = root->temp;
 	if (flag == 1)
-    	ft_printf("sa\n");
+		ft_printf("sa\n");
 }
 
 void	sb(t_root *root, bool flag)
 {
-	if (root->size < 2)
+	if (root->b < 2)
 		return ;
 	root->temp = root->stack_b[0];
 	root->stack_b[0] = root->stack_b[1];
 	root->stack_b[1] = root->temp;
 	if (flag == 1)
-    	ft_printf("sb\n");
+		ft_printf("sb\n");
 }
 
 void	ss(t_root *root)

@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 10:33:22 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/08 12:27:13 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/08 15:39:07 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	check_arguments(char **argv, t_root *root);
 // Utils
 void	ft_error(char *str, t_root *root);
 void	init_structs(t_root *root);
-void	tests(int *stack, char c);
+void	tests(t_root *root);
 
 // Algorithm
 void	test1(t_root *root);

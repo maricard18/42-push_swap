@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 15:00:31 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/08 12:51:04 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/08 17:02:05 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	pa(t_root *root)
 {
 	int	i;
 
-	i = root->a - 1;
+	i = root->a;
 	if (root->b == 0)
 		return ;
 	while (i - 1 >= 0)
@@ -45,7 +45,7 @@ void	pb(t_root *root)
 {
 	int	i;
 
-	i = root->b - 1;
+	i = root->b;
 	if (root->a == 0)
 		return ;
 	while (i - 1 >= 0)
