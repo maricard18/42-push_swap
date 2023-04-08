@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 11:03:17 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/07 14:49:39 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/08 00:46:18 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ void	put_to_stack(char **argv, t_root *root)
 	while (argv[i])
 	{
 		root->stack_a[a]= atoi(argv[i]);
-		ft_printf("%d\n", root->stack_a[a]);
 		i++;
 		a++;
 	}
@@ -49,7 +48,7 @@ void	is_number(char **argv, t_root *root)
 		}
 		i++;
 	}
-	root->size = i;
+	root->a = i;
 }
 
 void	check_arguments(char **argv, t_root *root)
