@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/08 10:37:07 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/08 18:47:18 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/11 11:01:00 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,7 @@
 
 void	test1(t_root *root)
 {
-	sa(root, 1);
 	tests(root);
 	pb(root);
-	tests(root);
-	pb(root);
-	tests(root);
-	pb(root);
-	tests(root);
-	sb(root, 1);
-	tests(root);
-	rb(root, 1);
-	tests(root);
-	rrb(root, 1);
 	tests(root);
 }
