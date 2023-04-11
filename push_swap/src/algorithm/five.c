@@ -1,38 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   five.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/07 10:35:52 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/11 13:42:59 by maricard         ###   ########.fr       */
+/*   Created: 2023/04/11 13:43:43 by maricard          #+#    #+#             */
+/*   Updated: 2023/04/11 13:44:17 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	start_sorting(t_root *root, int argc)
+void	three(t_root *root)
 {
-	if (argc >= 3 && argc <= 4)
-		three(root);
-	if (argc >= 5 && argc <= 6)
-		five (root);
-	if (argc >= 7 && argc <= 101)
-		one_hundred(root);
-	if (argc >= 102)
-		five_hundred(root);
-}
-
-int	main(int argc, char **argv)
-{
-	t_root	root;
-
-	ft_bzero(&root, sizeof(root));
-	init_structs(&root);
-	if (argc == 2)
-		exit(0);
-	check_arguments(argv, &root);
-	start_sorting(&root, argc);
-	return (0);
+	
 }
