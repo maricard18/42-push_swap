@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 10:35:52 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/11 13:42:59 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/12 11:43:31 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ void	start_sorting(t_root *root, int argc)
 		three(root);
 	if (argc >= 5 && argc <= 6)
 		five (root);
-	if (argc >= 7 && argc <= 101)
-		one_hundred(root);
-	if (argc >= 102)
-		five_hundred(root);
+	// if (argc >= 7 && argc <= 101)
+	// 	one_hundred(root);
+	// if (argc >= 102)
+	// 	five_hundred(root);
 }
 
 int	main(int argc, char **argv)
@@ -33,6 +33,8 @@ int	main(int argc, char **argv)
 	if (argc == 2)
 		exit(0);
 	check_arguments(argv, &root);
+	tests(&root);
 	start_sorting(&root, argc);
+	tests(&root);
 	return (0);
 }

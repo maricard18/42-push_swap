@@ -6,7 +6,7 @@
 #    By: maricard <maricard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/07 10:28:04 by maricard          #+#    #+#              #
-#    Updated: 2023/04/08 10:42:42 by maricard         ###   ########.fr        #
+#    Updated: 2023/04/12 11:43:49 by maricard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,8 @@ SRC =	./src/operations/push.c \
 		./src/operations/reverse.c \
 		./src/operations/rotate.c \
 		./src/operations/swap.c \
-		./src/algorithm/file1.c \
+		./src/algorithm/three.c \
+		./src/algorithm/five.c \
 		./src/stack/check_arguments.c \
 		./src/utils/ft_error.c \
 		./src/utils/init_structs.c \

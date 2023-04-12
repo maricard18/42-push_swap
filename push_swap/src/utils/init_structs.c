@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 13:05:50 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/08 12:32:04 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/12 12:16:56 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,4 +18,6 @@ void	init_structs(t_root *root)
 	root->b = 0;
 	root->temp = 0;
 	root->size = 0;
+	root->max = 0;
+	root->min = 0;
 }

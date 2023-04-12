@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 10:33:22 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/11 13:45:33 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/12 12:16:36 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ typedef struct s_root
 	int	size;
 	int	a;
 	int	b;
+	int	max;
+	int	min;
 	int	temp;
 	int	*stack_a;
 	int	*stack_b;
@@ -50,8 +52,8 @@ void	tests(t_root *root);
 // Algorithm
 void	three(t_root *root);
 void	five(t_root *root);
-void	one_hundred(t_root *root);
-void	five_hundred(t_root *root);
+// void	one_hundred(t_root *root);
+// void	five_hundred(t_root *root);
 
 // Operations
 // Swap
