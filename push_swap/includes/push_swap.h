@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 10:33:22 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/12 12:16:36 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/12 19:59:38 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ typedef struct s_root
 	int	size;
 	int	a;
 	int	b;
-	int	max;
 	int	min;
+	int	min2;
 	int	temp;
 	int	*stack_a;
 	int	*stack_b;

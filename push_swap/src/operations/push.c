@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 15:00:31 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/08 17:02:05 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/12 19:16:21 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	pa(t_root *root)
 	root->a++;
 	root->b--;
 	i = -1;
-	while (i++ <= root->size)
+	while (i++ <= root->b - 1)
 	{
 		root->temp = root->stack_b[i];
 		root->stack_b[i] = root->stack_b[i + 1];
@@ -61,7 +61,7 @@ void	pb(t_root *root)
 	root->b++;
 	root->a--;
 	i = -1;
-	while (i++ <= root->size)
+	while (i++ <= root->a - 1)
 	{
 		root->temp = root->stack_a[i];
 		root->stack_a[i] = root->stack_a[i + 1];
