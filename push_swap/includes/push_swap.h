@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 10:33:22 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/13 12:33:08 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/13 14:16:43 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ typedef struct s_root
 // Functions
 void	start_sorting(t_root *root, int argc);
 void	check_arguments(char **argv, t_root *root);
+void	find_min_a(t_root *root);
+void	find_max_a(t_root *root);
 
 // Utils
 void	ft_error(char *str, t_root *root);
