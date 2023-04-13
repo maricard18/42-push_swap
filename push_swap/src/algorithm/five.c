@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 13:43:43 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/13 14:17:06 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/13 15:07:25 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,6 @@ void	five(t_root *root)
 {
 	find_min_a(root);
 	find_max_a(root);
-	ft_printf("N min->%d |N max->%d\n", root->nmin, root->nmax);
 	push_to_b(root);
 	three(root);
 	push_to_a(root);
