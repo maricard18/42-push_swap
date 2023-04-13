@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/08 10:32:23 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/13 12:48:34 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/13 18:49:15 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ void	tests(t_root *root)
 			ft_printf("     \n");
 		i++;
 	}
-	ft_printf("------------\n\n");
+	ft_printf("------------\n");
+	ft_printf("Moves: %d\n", root->moves);
 }

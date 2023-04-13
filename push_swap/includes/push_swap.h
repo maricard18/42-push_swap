@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 10:33:22 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/13 15:14:05 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/13 18:31:35 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ typedef struct s_root
 	int	nmin;
 	int	nmax;
 	int	temp;
+	int	moves;
 	int	*stack_a;
 	int	*stack_b;
 }		t_root;

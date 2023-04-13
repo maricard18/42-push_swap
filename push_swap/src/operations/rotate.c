@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 15:00:58 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/08 17:01:30 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/13 18:33:11 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void	ra(t_root *root, bool flag)
 	}
 	if (flag == 1)
 		ft_printf("ra\n");
+	root->moves++;
 }
 
 void	rb(t_root *root, bool flag)
@@ -52,6 +53,7 @@ void	rb(t_root *root, bool flag)
 	}
 	if (flag == 1)
 		ft_printf("rb\n");
+	root->moves++;
 }
 
 void	rr(t_root *root)
