@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 10:35:52 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/13 18:51:14 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/14 14:32:31 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ int	main(int argc, char **argv)
 	tests(&root);
 	start_sorting(&root, argc);
 	tests(&root);
-//	free_stuff(&root);
+	free_stuff(&root);
 	return (0);
 }

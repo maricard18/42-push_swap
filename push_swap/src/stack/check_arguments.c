@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 11:03:17 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/14 14:27:29 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/14 14:38:35 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	put_to_stack(char **argv, t_root *root)
 	if (!root->stack_a)
 		ft_error("Memory error.", root);
 	root->stack_b = ft_calloc(root->size, sizeof(int));
-	if (!root->stack_a)
+	if (!root->stack_b)
 		ft_error("Memory error.", root);
 	while (argv[i])
 	{
