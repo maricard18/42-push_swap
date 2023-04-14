@@ -6,7 +6,7 @@
 #    By: maricard <maricard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/07 10:28:04 by maricard          #+#    #+#              #
-#    Updated: 2023/04/13 15:16:41 by maricard         ###   ########.fr        #
+#    Updated: 2023/04/14 12:45:26 by maricard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,7 @@ SRC =	./src/operations/push.c \
 		./src/stack/sorting.c \
 		./src/utils/ft_error.c \
 		./src/utils/init_structs.c \
+		./src/utils/long_atoi.c \
 		./src/utils/tests.c
 
 SRC-OBJ = $(SRC:.c=.o)
