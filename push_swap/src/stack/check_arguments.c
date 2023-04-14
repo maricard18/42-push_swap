@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 11:03:17 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/14 12:44:35 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/14 14:27:29 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,11 @@ void	put_to_stack(char **argv, t_root *root)
 
 int	check_int_range(char **argv, int i)
 {
+	int	a;
+
+	a = ft_strlen(argv[i]);
+	if (a > 18)
+		return (1);
 	if (argv[i][0] == '-')
 	{
 		if (long_atoi(argv[i]) < INT_MIN)
