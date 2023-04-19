@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 10:33:22 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/14 12:44:57 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/19 10:57:05 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ void		ft_error(char *str, t_root *root);
 void		free_stuff(t_root *root);
 void		init_structs(t_root *root);
 void		tests(t_root *root);
+void		indexing_array(t_root *root);
 long long	long_atoi(char *str);
 
 // Algorithm
