@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 10:37:36 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/19 11:57:16 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/19 20:24:22 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	indexing_array(t_root *root)
 		i++;	
 	}
 	i = 0;
-	while (temp[i + 1])
+	while (i < root->size - 1)
 	{
 		if (temp[i] > temp[i + 1])
 		{

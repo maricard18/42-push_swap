@@ -6,7 +6,7 @@
 #    By: maricard <maricard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/07 10:28:04 by maricard          #+#    #+#              #
-#    Updated: 2023/04/19 11:34:47 by maricard         ###   ########.fr        #
+#    Updated: 2023/04/19 16:54:21 by maricard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ SRC =	./src/operations/push.c \
 		./src/algorithm/two.c \
 		./src/algorithm/three.c \
 		./src/algorithm/five.c \
-		./src/algorithm/one_hundred.c \
+		./src/algorithm/radix.c \
 		./src/stack/check_arguments.c \
 		./src/stack/find_extremes.c \
 		./src/stack/sorting.c \
