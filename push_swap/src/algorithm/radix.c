@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 13:43:34 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/20 13:46:02 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/20 19:52:01 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void	radix(t_root *root)
 {
 	int	i;
 
-	i = 7;
+	i = 10;
 	indexing_array(root);
 	while (i >= 0)
 	{

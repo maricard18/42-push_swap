@@ -14,9 +14,6 @@
 
 void	push_to_a(t_root *root)
 {
-	int	i;
-
-	i = 0;
 	if (root->stack_b[0] > root->stack_b[1])
 		sb(root, 1);
 	pa(root);
