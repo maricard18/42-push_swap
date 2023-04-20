@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 13:43:34 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/20 09:30:07 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/20 13:46:02 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	check_stack_a_bits(t_root *root)
 
 	i = 0;
 	k = root->a;
-	while (i <= root->max_bits)
+	while (i < root->max_bits)
 	{
 		a = 0;
 		while (a < k)
