@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 12:35:10 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/14 12:49:34 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/20 09:32:27 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 long long	long_atoi(char *str)
 {
-	long long num;
-	int	i;
-	int	signal;
+	long long	num;
+	int			i;
+	int			signal;
 
 	i = 0;
 	signal = 1;

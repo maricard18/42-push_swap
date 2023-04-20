@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 14:15:37 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/13 14:16:12 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/20 09:54:57 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	find_max_a(t_root *root)
 
 	i = 0;
 	a = i + 1;
-	while (root->stack_a[a])
+	while (a < root->size)
 	{
 		if (root->stack_a[i] > root->stack_a[a])
 		{
@@ -43,7 +43,7 @@ void	find_min_a(t_root *root)
 
 	i = 0;
 	a = i + 1;
-	while (root->stack_a[a])
+	while (a < root->size)
 	{
 		if (root->stack_a[i] < root->stack_a[a])
 		{

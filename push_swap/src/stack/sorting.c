@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 15:03:13 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/19 20:56:31 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/20 10:40:02 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,9 @@ void	start_sorting(t_root *root, int argc)
 		two(root);
 	else if (argc == 4)
 		three(root);
-	else if (argc >= 5 && argc <= 6)
+	else if (argc == 5)
+		four(root);
+	else if (argc == 6)
 		five (root);
 	else if (argc >= 7)
 	{

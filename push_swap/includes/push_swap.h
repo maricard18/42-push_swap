@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 10:33:22 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/19 16:54:11 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/20 10:38:59 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ typedef struct s_root
 	int	size;
 	int	a;
 	int	b;
+	int	k;
+	int	i;
 	int	min;
 	int	max;
 	int	nmin;
@@ -40,6 +42,7 @@ typedef struct s_root
 	int	max_bits;
 	int	temp;
 	int	moves;
+	int	*t;
 	int	*stack_a;
 	int	*stack_b;
 }		t_root;
@@ -51,7 +54,7 @@ void	find_min_a(t_root *root);
 void	find_max_a(t_root *root);
 
 // Utils
-void		ft_error(char *str, t_root *root);
+void		ft_error(t_root *root);
 void		free_stuff(t_root *root);
 void		init_structs(t_root *root);
 void		tests(t_root *root);
@@ -61,6 +64,7 @@ long long	long_atoi(char *str);
 // Algorithm
 void	two(t_root *root);
 void	three(t_root *root);
+void	four(t_root *root);
 void	five(t_root *root);
  void	radix(t_root *root);
 // void	five_hundred(t_root *root);

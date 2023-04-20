@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 11:09:27 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/13 15:16:16 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/20 10:10:45 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,9 @@ void	free_stuff(t_root *root)
 		free(root->stack_b);
 }
 
-void	ft_error(char *str, t_root *root)
+void	ft_error(t_root *root)
 {
 	ft_printf("Error\n");
-	ft_printf("%s\n", str);
 	free_stuff(root);
 	exit(0);
 }

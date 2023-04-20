@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 11:03:17 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/19 10:27:10 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/20 10:11:23 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,16 @@ void	is_duplicate(t_root *root)
 	int	a;
 
 	i = 0;
-	while (root->stack_a[i])
+	while (i < root->size)
 		i++;
+	i = i - 1;
 	while (i > 0)
 	{
 		a = i - 1;
 		while (a >= 0)
 		{
 			if (root->stack_a[a] == root->stack_a[i])
-				ft_error("Arguments can't be duplicate!", root);
+				ft_error(root);
 			a--;
 		}
 		i--;
@@ -42,10 +43,10 @@ void	put_to_stack(char **argv, t_root *root)
 	a = 0;
 	root->stack_a = ft_calloc(root->size, sizeof(int));
 	if (!root->stack_a)
-		ft_error("Memory error.", root);
+		ft_error(root);
 	root->stack_b = ft_calloc(root->size, sizeof(int));
 	if (!root->stack_b)
-		ft_error("Memory error.", root);
+		ft_error(root);
 	while (argv[i])
 	{
 		root->stack_a[a] = atoi(argv[i]);
@@ -90,10 +91,10 @@ void	is_number(char **argv, t_root *root)
 			if (argv[i][a] >= '0' && argv[i][a] <= '9')
 				a++;
 			else
-				ft_error("Invalid Arguments.", root);
+				ft_error(root);
 		}
 		if (check_int_range(argv, i) == 1)
-			ft_error("Argument is out of the int range.", root);
+			ft_error(root);
 		i++;
 	}
 	root->size = i - 1;

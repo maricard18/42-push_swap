@@ -6,7 +6,7 @@
 /*   By: maricard <maricard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 10:35:52 by maricard          #+#    #+#             */
-/*   Updated: 2023/04/19 16:48:13 by maricard         ###   ########.fr       */
+/*   Updated: 2023/04/20 10:39:37 by maricard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,8 @@ int	main(int argc, char **argv)
 	if (argc <= 2)
 		exit(0);
 	check_arguments(argv, &root);
-	tests(&root);
 	start_sorting(&root, argc);
-	tests(&root);
-//	free_stuff(&root);
+	free_stuff(&root);
+	exit(0);
 	return (0);
 }
