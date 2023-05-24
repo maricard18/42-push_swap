@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/maricard18/42-Born2beRoot/blob/main/extras/born2beroot.png" alt="Born2beRoot">
+    <img src="https://github.com/maricard18/42-push_swap/blob/main/extras/pushswap.png" alt="PushSwap">
 </p>
 
 
