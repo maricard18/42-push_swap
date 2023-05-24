@@ -3,11 +3,14 @@
 </p>
 
 
-## Your very first own Virtual Machine
+## Sort Data
 
-This project is about creating our first Virtual Machine. <br>
-It's a very useful tool when there is the need to run programs on different operating systems or test dangerous software. <br>
-This project is in rank 1 of 42 common core and had passed with the score of 125.<br>
+This project will make you sort data on a stack, with a limited set of instructions, using
+the lowest possible number of actions. <br>
+To succeed I had to manipulate various
+types of algorithms and choose the most appropriate solution (out of many) for an
+optimized data sorting. <br>
+This project is in rank 2 of 42 common core and had passed with the score of 84.<br>
 [-> Subject here](https://github.com/maricard18/42-push_swap/blob/main/extras/en.subject.pdf)
 
 ## Script
