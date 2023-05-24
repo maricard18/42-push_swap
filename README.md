@@ -13,11 +13,23 @@ optimized data sorting. <br>
 This project is in rank 2 of 42 common core and had passed with the score of 84.<br>
 [-> Subject here](https://github.com/maricard18/42-push_swap/blob/main/extras/en.subject.pdf)
 
-## Script
+## How To Use
 
-The only file in this repository is the script that i nedded to run on my VM.<br>
-For obvious reasons i can't put my VM in here so the script coded in shell is here.<br>
-I used the crontab system to run this scrip during a specific time.
+To clone and run this project, just follow this instructions
+
+```bash
+# Clone this repository
+$ git clone https://github.com/maricard18/42-push_swap
+
+# Go into the repository
+$ cd push_swap
+
+# Run make command
+$ make
+```
+
+> **Note**
+> this project is only useful when used with porpuse. So if you want to get the most of it you will need to build a main function.
 
 ## Credits
 
