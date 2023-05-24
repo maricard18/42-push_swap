@@ -1,3 +1,4 @@
+<p align="center">
     <img src="https://github.com/maricard18/42-Born2beRoot/blob/main/extras/born2beroot.png" alt="Born2beRoot">
 </p>
 
@@ -28,4 +29,3 @@ This README uses the following packages
 
 > GitHub [@maricard18](https://github.com/maricard18) &nbsp;&middot;&nbsp;
 > Linkedin [Mario Henriques](https://www.linkedin.com/in/mario18)
-
